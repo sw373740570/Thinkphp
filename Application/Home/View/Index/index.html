@@ -1,0 +1,26 @@
+<script src="__PUBLIC__/Home/js/jquery-1.11.1.min.js"></script>
+<script src="__PUBLIC__/Home/js/uploadPreview.js"></script>
+<script>
+    $(function(){
+        new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
+//        $("#up_img").on('change',function(){
+//            $("#imgShow").removeAttr('id');
+//            $("#up_img").removeAttr('id');
+//            $('#imgdiv').append("<img id='imgShow' width='120' height='120' /><input type='file' id='up_img' name='img[]' onchange='upload()'>");
+//            new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
+//        });
+    });
+    
+    function changeValue(){
+        $("#imgShow").removeAttr('id');
+        $("#up_img").removeAttr('id');
+        $('#imgdiv').append("<img id='imgShow' width='120' height='120' /><input type='file' id='up_img' name='img[]' onchange='changeValue()'>");
+        new uploadPreview({ UpBtn: "up_img", DivShow: "imgdiv", ImgShow: "imgShow" });
+    }
+</script>
+
+<div id="imgdiv">
+    <img id="imgShow" width="120" height="120" />
+    <input type="file" id="up_img" name="img[]" onchange="changeValue()"> 
+</div>
+

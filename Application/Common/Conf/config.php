@@ -19,4 +19,9 @@ return array(
     
     'sms' => include 'sms.php',
     'WECHAT' => include 'wechat.php',
+    'alipay' => include 'alipay.php',
+    
+    'TMPL_PARSE_STRING' => array(
+        '__UPLOAD__' => __ROOT__ . '/Upload',
+    ),
 );
