@@ -18,4 +18,5 @@ return array(
     'DB_CHARSET' => 'utf8', // 字符集
     
     'sms' => include 'sms.php',
+    'WECHAT' => include 'wechat.php',
 );

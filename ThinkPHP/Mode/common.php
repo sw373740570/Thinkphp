@@ -67,5 +67,8 @@ return array(
         'view_filter'   =>  array(
             'Behavior\WriteHtmlCacheBehavior', // 写入静态缓存
         ),
+        'wechat_share'  => array(
+            'Behavior\WechatShareBehavior' // 微信分享
+        ),
     ),
 );
